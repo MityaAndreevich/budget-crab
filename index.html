@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Budget Crab Money Tracker — private expense tracking on iOS. No banks, no cloud, no account.">
+<meta name="robots" content="index, follow">
+<title>Budget Crab Money Tracker — Private expense tracking on iOS</title>
+<style>
+  :root {
+    --mint: #2FD69B;
+    --mint-light: #5FE8B2;
+    --navy: #080D2E;
+    --navy-light: #2A166A;
+    --ink: #1A1A24;
+    --paper: #FAFAF7;
+    --paper-card: #FFFFFF;
+    --muted: #6B7280;
+    --border: #E5E7EB;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #F7F2E8;
+      --paper: #0F1424;
+      --paper-card: #1A2138;
+      --muted: #9CA3AF;
+      --border: #2E3650;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .hero {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+    color: #FFFFFF;
+    padding: 80px 24px 96px;
+    text-align: center;
+  }
+
+  .hero__logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 96px;
+    height: 96px;
+    background: var(--mint);
+    border-radius: 22px;
+    color: var(--navy);
+    font-size: 56px;
+    margin-bottom: 24px;
+    box-shadow: 0 12px 32px rgba(47, 214, 155, 0.25);
+  }
+
+  .hero h1 {
+    font-size: 44px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 0 0 12px;
+  }
+
+  .hero__tagline {
+    font-size: 18px;
+    opacity: 0.78;
+    margin: 0 0 32px;
+    font-weight: 400;
+  }
+
+  .hero__sub {
+    font-size: 14px;
+    opacity: 0.55;
+    margin: 0;
+    letter-spacing: 0.02em;
+  }
+
+  .container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 24px;
+  }
+
+  .pillars {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin: 0 0 56px;
+  }
+
+  @media (min-width: 640px) {
+    .pillars { grid-template-columns: 1fr 1fr; }
+  }
+
+  .pillar {
+    background: var(--paper-card);
+    border: 1px solid var(--border);
+    padding: 24px;
+    border-radius: 14px;
+  }
+
+  .pillar h3 {
+    margin: 0 0 8px;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--ink);
+  }
+
+  .pillar p {
+    margin: 0;
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.55;
+  }
+
+  .architecture {
+    background: var(--paper-card);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--mint);
+    padding: 24px;
+    border-radius: 12px;
+    margin: 0 0 56px;
+  }
+
+  .architecture h2 {
+    margin: 0 0 12px;
+    font-size: 18px;
+  }
+
+  .architecture p {
+    margin: 0 0 8px;
+    color: var(--ink);
+  }
+
+  .architecture p:last-child { margin-bottom: 0; }
+
+  .links {
+    text-align: center;
+    padding: 32px 0;
+    border-top: 1px solid var(--border);
+  }
+
+  .links a {
+    color: var(--mint);
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 15px;
+    font-weight: 500;
+    border-bottom: 1px solid transparent;
+  }
+
+  .links a:hover { border-bottom-color: var(--mint); }
+
+  .footer {
+    text-align: center;
+    padding: 24px 0 56px;
+    color: var(--muted);
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero__logo">🦀</div>
+  <h1>Budget Crab</h1>
+  <p class="hero__tagline">Private expense tracking on your iPhone.</p>
+  <p class="hero__sub">Coming to the App Store · iOS 17+</p>
+</header>
+
+<main class="container">
+
+  <div class="architecture">
+    <h2>The architecture is the privacy promise.</h2>
+    <p>Budget Crab stores everything on your iPhone. There are no servers to receive your data, no analytics SDKs, no advertising trackers.</p>
+    <p>Voice entry runs on-device using Apple's Speech framework. Your audio never leaves your phone.</p>
+  </div>
+
+  <div class="pillars">
+    <div class="pillar">
+      <h3>No banks</h3>
+      <p>No account linking. You type or speak your transactions. The app never asks for your bank credentials.</p>
+    </div>
+    <div class="pillar">
+      <h3>No cloud</h3>
+      <p>No server-side sync. No backups to our infrastructure. Your data stays in the app's container on your device.</p>
+    </div>
+    <div class="pillar">
+      <h3>No account</h3>
+      <p>No sign-up. No email required. Open the app, start tracking. Premium features are unlocked through Apple's StoreKit.</p>
+    </div>
+    <div class="pillar">
+      <h3>Voice + Siri</h3>
+      <p>Say "Hey Siri, add ten dollars groceries" and the transaction lands locally. On-device speech recognition, never uploaded.</p>
+    </div>
+  </div>
+
+  <div class="links">
+    <a href="PRIVACY_POLICY.html">Privacy Policy</a>
+    <a href="support.html">Support</a>
+    <a href="mailto:support@budgetcrab.app">Contact</a>
+  </div>
+
+</main>
+
+<footer class="footer">
+  Budget Crab Money Tracker · iOS 17+ · Built independently
+</footer>
+
+</body>
+</html>

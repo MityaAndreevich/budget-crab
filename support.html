@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Support and frequently asked questions for Budget Crab Money Tracker.">
+<title>Support — Budget Crab Money Tracker</title>
+<style>
+  :root {
+    --mint: #2FD69B;
+    --navy: #080D2E;
+    --navy-light: #2A166A;
+    --ink: #1A1A24;
+    --paper: #FAFAF7;
+    --paper-card: #FFFFFF;
+    --muted: #6B7280;
+    --border: #E5E7EB;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #F7F2E8;
+      --paper: #0F1424;
+      --paper-card: #1A2138;
+      --muted: #9CA3AF;
+      --border: #2E3650;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--paper); color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px; line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .header {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+    color: #FFFFFF;
+    padding: 48px 24px 56px;
+    text-align: center;
+  }
+  .header__logo {
+    display: inline-flex; align-items: center; gap: 12px; margin-bottom: 8px;
+  }
+  .header__crab {
+    width: 48px; height: 48px;
+    background: var(--mint); border-radius: 12px;
+    display: inline-flex; align-items: center; justify-content: center;
+    color: var(--navy); font-size: 28px;
+  }
+  .header__title { font-size: 22px; font-weight: 600; }
+  .header h1 {
+    font-size: 32px; margin: 16px 0 8px;
+    font-weight: 700; letter-spacing: -0.02em;
+  }
+  .header__sub { font-size: 15px; opacity: 0.75; margin: 0; }
+  .container { max-width: 720px; margin: 0 auto; padding: 40px 24px 80px; }
+  .contact {
+    background: var(--paper-card);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--mint);
+    padding: 20px 24px; border-radius: 12px;
+    margin: 0 0 40px;
+  }
+  .contact strong { display: block; font-size: 18px; margin-bottom: 6px; }
+  .contact a { color: var(--mint); text-decoration: none; border-bottom: 1px solid var(--mint); }
+  h2 {
+    font-size: 22px; font-weight: 700;
+    margin: 32px 0 12px;
+    letter-spacing: -0.01em;
+  }
+  .faq {
+    border-bottom: 1px solid var(--border);
+    padding: 16px 0;
+  }
+  .faq:last-child { border-bottom: none; }
+  .faq h3 {
+    margin: 0 0 6px; font-size: 16px; font-weight: 600;
+  }
+  .faq p { margin: 0; color: var(--muted); font-size: 15px; }
+  .footer {
+    text-align: center; color: var(--muted);
+    font-size: 13px; padding: 24px 0 0;
+    border-top: 1px solid var(--border); margin-top: 40px;
+  }
+  .footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header__logo">
+    <span class="header__crab">🦀</span>
+    <span class="header__title">Budget Crab</span>
+  </div>
+  <h1>Support</h1>
+  <p class="header__sub">We read every email. Usually reply within 24–48 hours.</p>
+</header>
+
+<main class="container">
+
+  <div class="contact">
+    <strong>Email support</strong>
+    <a href="mailto:support@budgetcrab.app">support@budgetcrab.app</a>
+    <p style="margin: 8px 0 0; color: var(--muted); font-size: 14px;">
+      Include your iOS version, app version (Settings → About), and a description of what you're seeing. Screenshots help a lot.
+    </p>
+  </div>
+
+  <h2>Frequently asked questions</h2>
+
+  <div class="faq">
+    <h3>Does Budget Crab connect to my bank?</h3>
+    <p>No. The app does not connect to any bank, payment network, or financial data aggregator. You enter transactions manually (typing or voice). This is intentional — your financial data never leaves your phone.</p>
+  </div>
+
+  <div class="faq">
+    <h3>Where is my data stored?</h3>
+    <p>On your iPhone, in the app's protected container. iOS Data Protection encrypts the storage when your phone is locked. Nothing is uploaded to any server we operate.</p>
+  </div>
+
+  <div class="faq">
+    <h3>What happens if I delete the app?</h3>
+    <p>Your transactions are removed with the app. Because nothing is stored in the cloud by us, deleting the app erases your local data. Export to CSV first if you want to keep a copy.</p>
+  </div>
+
+  <div class="faq">
+    <h3>Does voice entry send my audio to a server?</h3>
+    <p>No. Voice entry uses Apple's on-device Speech framework with the <code>requiresOnDeviceRecognition</code> setting enforced. Audio is processed in memory on your phone and is never transmitted.</p>
+  </div>
+
+  <div class="faq">
+    <h3>How do I restore my Premium purchase on a new phone?</h3>
+    <p>Open the app on the new phone. Go to Settings → Premium → "Restore Purchases". As long as you're signed in to the same Apple ID that made the original purchase, your Premium status will be restored from Apple's records.</p>
+  </div>
+
+  <div class="faq">
+    <h3>How do I cancel a subscription?</h3>
+    <p>Open the iOS Settings app → tap your Apple ID at the top → Subscriptions → Budget Crab Premium → Cancel Subscription. The app itself cannot cancel subscriptions; this is handled by Apple.</p>
+  </div>
+
+  <div class="faq">
+    <h3>Can I export my data?</h3>
+    <p>Yes. Go to Settings → Data → Export to CSV. The file is generated on your phone and can be shared via any iOS share sheet target (Mail, Files, AirDrop, etc.).</p>
+  </div>
+
+  <div class="faq">
+    <h3>Will there be CloudKit sync between my iPhone and iPad?</h3>
+    <p>It's on the roadmap for a future version, but only as an opt-in feature — and only through Apple's CloudKit, where Apple holds the encryption keys (not us). Version 1.0 is iPhone-only and local-only.</p>
+  </div>
+
+  <div class="faq">
+    <h3>I have feature suggestions. Where do I send them?</h3>
+    <p>Email <a href="mailto:support@budgetcrab.app">support@budgetcrab.app</a>. Every suggestion is read by Dmitry. We prioritize based on how many people ask for the same thing.</p>
+  </div>
+
+  <p class="footer">
+    Budget Crab Money Tracker · iOS 17+<br>
+    <a href="index.html">Home</a> · <a href="PRIVACY_POLICY.html">Privacy Policy</a>
+  </p>
+
+</main>
+
+</body>
+</html>
