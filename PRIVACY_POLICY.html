@@ -191,8 +191,13 @@
 
   <div class="meta">
     <strong>Effective date:</strong> July 1, 2026<br>
-    <strong>Last updated:</strong> June 26, 2026<br>
+    <strong>Last updated:</strong> November 6, 2026<br>
     <strong>Applies to:</strong> Budget Crab Money Tracker for iOS, version 1.0 and later.
+  </div>
+
+  <div class="highlight">
+    <strong>Updated November 6, 2026</strong>
+    Sections 2.1 and 5 now say exactly how iOS encrypts the app's data and what iCloud Backup can include. Nothing the app does has changed.
   </div>
 
   <div class="highlight">
@@ -206,7 +211,7 @@
   <h2>2. What information the app handles</h2>
 
   <h3>2.1 Information you enter</h3>
-  <p>You can record financial transactions, categories, accounts, merchants, notes, and similar data. This information is stored locally in the iOS application container on your iPhone. It is protected by iOS Data Protection (NSFileProtectionComplete), which ties decryption to your device passcode.</p>
+  <p>You can record financial transactions, categories, accounts, merchants, notes, and similar data. This information is stored locally in the iOS application container on your iPhone. It is encrypted by iOS Data Protection, which ties decryption to your device passcode. After you first unlock your iPhone following a restart, the app can open it in the background, for example when you add a transaction from the Shortcuts app.</p>
 
   <h3>2.2 Information the app does not collect</h3>
   <ul>
@@ -237,7 +242,7 @@
   <p>If you have opted in to Apple's "Share With App Developers" setting on your iPhone, Apple may share aggregated, anonymized crash and performance data with us through App Store Connect. This sharing is controlled by your iPhone settings, not by the app.</p>
 
   <h2>5. Backups and sync</h2>
-  <p>If you have iCloud Backup enabled in your iPhone settings, your iPhone may back up the app's local data as part of your overall device backup. This is handled by Apple under your control. The app does not implement its own cloud sync or backup feature in version 1.0.</p>
+  <p>Your data stays on your iPhone. We never receive it. If you use iCloud Backup, your iPhone's backup can include some of it, such as your settings and the widget's summary; Apple encrypts it and we can't read it. The app keeps its transaction database out of the backup, so before moving to a new iPhone, export a CSV. Importing it on the new iPhone needs Premium or the free 14-day preview. Today the app has no cloud sync or backup feature of its own.</p>
 
   <h2>6. Children</h2>
   <p>The app is not directed to children under 13 years of age and does not knowingly collect any information from children. The age rating in the App Store reflects this.</p>
